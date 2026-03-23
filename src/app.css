@@ -1,0 +1,35 @@
+/* Tailwind v4 : un seul import */
+@import "tailwindcss";
+
+/* Import Inter for a modern, readable UI */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+/* Déclare nos tokens de couleurs personnalisés */
+@theme {
+  --color-base-bg:   #0a0a0a;
+  --color-base-fg:   #e6e6e6;
+  --color-base-muted:#a1a1a1;
+  --color-base-card: #111111;
+  --color-base-line: #1f1f1f;
+}
+
+:root { color-scheme: dark; }
+html, body, #svelte { height: 100%; }
+
+/* Utilitaires basés sur les tokens ci-dessus */
+body {
+  @apply font-sans bg-base-bg text-base-fg antialiased;
+  font-weight: 500;
+}
+
+/* Stronger headings */
+h1, h2, h3, h4, h5 {
+  font-weight: 800;
+}
+
+/* Ensure Tailwind's font-sans (Inter) is applied globally at the base layer */
+@layer base {
+  html, body, #svelte {
+    @apply font-sans;
+  }
+}
