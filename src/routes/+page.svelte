@@ -25,16 +25,29 @@
 
   <Section id="competences" title="Compétences">
     <ul class="grid sm:grid-cols-2 md:grid-cols-3 gap-3 text-sm">
-      {#each site.skills as s}
-        <li class="rounded-xl border border-base-line bg-base-card p-3">{s}</li>
+      {#each site.skills as skill}
+        <img src={skill.icon} alt={skill.name} style="transform: scale(0.3);"/>
       {/each}
     </ul>
   </Section>
 
   <Section id="contact" title="Contact" class="font-semibold">
-    <p>
+    <div class="mb-2">
       Email: <a class="underline" href={"mailto:"+site.email}>{site.email}</a>
-    </p>
+    </div>
+    <div class="mb-2">
+      <script type="text/javascript" async src="https://static.zcal.co/embed/v1/embed.js"></script>
+      <div class="zcal-inline-widget"><a href="https://zcal.co/i/yoDUVdCJ" style="transform: scale(0.3);">Échange exploratoire Google Meet - 20 min - Schedule a meeting</a></div>
+    </div>
+    <div class="mb-2">
+      <script type="text/javascript" async src="https://static.zcal.co/embed/v1/embed.js"></script>
+      <div class="zcal-inline-widget"><a href="https://zcal.co/i/vMc4lQ49" style="transform: scale(0.3);">Échange exploratoire — Télephone - 20 min - Schedule a meeting</a></div>
+    </div>
+    <div class="mb-2">
+      <script type="text/javascript" async src="https://static.zcal.co/embed/v1/embed.js"></script>
+      <div class="zcal-inline-widget"><a href="https://zcal.co/i/2mbVywlH" style="transform: scale(0.3);">Entretien technique — 45 min - Schedule a meeting</a></div>
+    </div>
+
   </Section>
 
   <Footer />

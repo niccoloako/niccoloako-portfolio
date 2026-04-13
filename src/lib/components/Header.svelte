@@ -10,7 +10,7 @@
       <!-- svelte-ignore event_directive_deprecated -->
       <button onclick={() => { showStory = !showStory; console.log(showStory); }} aria-label="Voir ma story">
           <!-- svelte-ignore a11y_missing_attribute -->
-          <img src="/niccoloako_imagepic.jpg" aria-label="TEST NICO" alt="TEST-NICO"
+          <img src="/niccoloako_imagepic.jpg"
           class="h-28 w-28 md:h-32 md:w-32 rounded-full object-cover select-none cursor-pointer transition
               hover:scale-[1.02] focus:scale-[1.02] outline-none"
           style="box-shadow: 0 0 0 3px color-mix(in oklab, {site.accent} 35%, transparent);"/>
