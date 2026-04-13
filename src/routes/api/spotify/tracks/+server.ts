@@ -2,6 +2,7 @@ import type { RequestHandler } from '@sveltejs/kit';
 // Buffer is available in Node; declare for TypeScript in this server file
 declare const Buffer: any;
 import { SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET } from '$env/static/private';
+export const prerender = true;
 // If SPOTIFY_CLIENT_SECRET is not exported, check your .env file and add:
 // SPOTIFY_CLIENT_SECRET=your_secret_here
 // Then restart your dev server.
